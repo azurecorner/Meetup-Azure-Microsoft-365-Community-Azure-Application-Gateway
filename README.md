@@ -46,9 +46,17 @@ Azure provides other load balancing solutions, including Azure Front Door, Azure
 
 ![application-gateway-components](https://user-images.githubusercontent.com/108787059/223860774-268ba3c9-c5b8-4ec6-84fe-c66cafec7be9.png)
 
+Front-end IP address: 
+Listeners: 
+Routing rules: 
+
 ![path-based-routing](https://user-images.githubusercontent.com/108787059/223860815-bb87fd81-7ebb-47ae-8298-5facfc9067d5.png)
+Path-based routing
+Path-based routing sends requests with different URL paths to different pools of back-end servers. For example, you could direct requests with the path /video/* to a back-end pool containing servers that are optimized to handle video streaming, and direct /images/* requests to a pool of servers that handle image retrieval.
 ![multi-site-routing](https://user-images.githubusercontent.com/108787059/223860840-a339b90e-8e9a-4efd-b2b2-cf02d4c5b786.png)
+Multiple-site routing configures more than one web application on the same Application Gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the application gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. 
 ![tls-ssl-termination](https://user-images.githubusercontent.com/108787059/223860857-446496f1-0276-4b48-b26f-b5e3a5356251.png)
+When you terminate the TLS/SSL connection at the application gateway, it offloads the CPU-intensive TLS/SSL termination workload from your servers. Also, you don’t need to install certificates and configure TLS/SSL on your servers.
 
 
 
