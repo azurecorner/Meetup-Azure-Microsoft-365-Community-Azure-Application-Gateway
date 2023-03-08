@@ -28,9 +28,9 @@ Azure Application Gateway comprend les fonctionnalités suivantes:
 
 # **What is Application Gateway Ingress Controller?**
 
-L'application Gateway Ingress Controller (AGIC) est une application Kubernetes, ce qui permet aux clients Azure Kubernetes Service (AKS) de tirer parti de la passerelle d'application native d'Azure L7 L7-Balancer pour exposer le logiciel cloud à Internet. AGIC surveille le cluster Kubernetes sur lequel il est hébergé et met à jour en continu une passerelle d'application, afin que les services sélectionnés soient exposés à Internet.
+AGIC permet d’éliminer la nécessité d’avoir un autre IP public/équilibreur de charge devant le cluster AKS et d’éviter  d'exposer plusieurs addresse ip sur le web et donc reduire la surface d'attaque. Application Gateway communique directement avec les pods à l’aide de leur IP privé  Cela offre également un meilleur niveau de performance à vos déploiements.
 
-Le contrôleur entrant fonctionne dans son propre pod sur les AK du client. AGIC surveille un sous-ensemble de ressources Kubernetes pour les changements. L'état du cluster AKS est traduit par une configuration spécifique de la passerelle d'application et appliqué à Azure Resource Manager (ARM).
+
 ![architecture](https://user-images.githubusercontent.com/108787059/223260871-26e5369d-4240-4830-a8d1-5af109239ba2.png)
 
 
