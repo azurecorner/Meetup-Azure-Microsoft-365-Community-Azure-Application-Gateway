@@ -44,3 +44,13 @@ Azure provides other load balancing solutions, including Azure Front Door, Azure
 * **Azure Load Balancer** is a high-performance, ultra low-latency Layer 4 load-balancing service (inbound and outbound) for all UDP and TCP protocols. It's built to handle millions of requests per second while ensuring that your solution is highly available. Azure Load Balancer is zone-redundant, ensuring high availability across availability zones. Azure Load Balancer works within a region rather than globally.
 * **Application Gateway **provides application delivery controller (ADC) as a service, offering various Layer 7 load-balancing capabilities. You can use it to optimize web-farm productivity by offloading CPU-intensive TLS/SSL termination to the gateway. Application Gateway works within a region rather than globally.
 
+![application-gateway-components](https://user-images.githubusercontent.com/108787059/223860774-268ba3c9-c5b8-4ec6-84fe-c66cafec7be9.png)
+
+![path-based-routing](https://user-images.githubusercontent.com/108787059/223860815-bb87fd81-7ebb-47ae-8298-5facfc9067d5.png)
+![multi-site-routing](https://user-images.githubusercontent.com/108787059/223860840-a339b90e-8e9a-4efd-b2b2-cf02d4c5b786.png)
+![tls-ssl-termination](https://user-images.githubusercontent.com/108787059/223860857-446496f1-0276-4b48-b26f-b5e3a5356251.png)
+
+
+
+
+
